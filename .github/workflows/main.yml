@@ -13,3 +13,4 @@ jobs:
        with:
          python-version: '3.11.5'
      - run: git update-index --chmod=+x ./p1.py
+     - run: ./p1.py
