@@ -6,10 +6,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    steps: 
+    steps:
      - uses: actions/checkout@v3
-     - uses: actions/setup-python@v1
+     - uses: actions/setup-python@v4
        with:
-         python-version: 3.11.5
-     - name: Run a sample file
-       run: ./p1.py
+        python-version: '3.9'
+        cache: 'pip' # caching pip dependencies
+     - run: pip install -r requirements.txt
