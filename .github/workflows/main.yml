@@ -17,4 +17,4 @@ jobs:
         python -m pip install --upgrade pip
      - name: Run tests
        run: |
-        python -m ./p1.py
+        ./p1.py
